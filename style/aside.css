@@ -1,0 +1,24 @@
+aside {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  width: 33%;
+
+  background-image: url(../assets/image/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+
+  & img {
+    height: 2.86rem;
+    width: 3rem;
+  }
+
+  & h1 {
+    font: 400 2.5rem var(--font-family-leckerli);
+    color: var(--pink);
+  }
+
+  & span {
+    color: var(--text-heading);
+  }
+}

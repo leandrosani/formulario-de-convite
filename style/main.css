@@ -1,0 +1,34 @@
+main {
+  padding: 130px;
+  background-color: var(--shape-body);
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  border-radius: 12px;
+  overflow: auto;
+  font-family: var(--font-family-sans);
+  color: var(--text-heading);
+}
+
+h2 {
+  font: 600 1.75rem var(--font-family-sans);
+  margin-bottom: 40px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  
+  legend {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--input-placeholder);
+    }
+  }
+}
