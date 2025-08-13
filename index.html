@@ -26,15 +26,115 @@
     
         <h2>Crie seu convite</h2>
         <fieldset>
-          <legend>
-            <img src="assets/image/icons/calendar.png" alt="">
-            <strong>Sobre o evento</strong>
-          </legend>
 
-          <div class="div-wrap">
-            <label for="eventname">Título</label>
-            <input type="text" id="eventname" name="eventname" placeholder="Nome do evento">
-          </div>
+          <div class="input-wrap">
+            <legend>
+              <img src="assets/image/icons/calendar.png" alt="">
+              <strong>Sobre o evento</strong>
+            </legend>
+            <label class="wrap" for="eventname">Título
+              <input type="text" id="eventname" name="eventname" placeholder="Nome do evento">
+            </label>
+
+            <div class="input-wrap-2">
+              <label class="wrap2" for="starttime">Início
+                <input type="datetime-local" id="starttime" name="starttime" placeholder="DD/MM/AAAA, --:--">
+              </label>
+              <label class="wrap2" for="endtime">Fim
+                <input type="datetime-local" id="endtime" name="endtime" placeholder="DD/MM/AAAA, --:--">
+              </label>
+            </div>
+
+            <div class="input-wrap-2">
+              <div class="radio-wrap">
+              <span>Tipo</span>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="type" id="presencial">
+                    <div class="custom">
+                      <div class="build"></div>
+                      <span>Presencial</span>
+                    </div>
+                  </label>
+                  <label>
+                    <input type="radio" name="type" id="online">
+                    <div class="custom">
+                      <div class="video"></div>
+                      <span>Online</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <label class="wrap2" for="local">Local
+                <input type="text" id="local" name="local" placeholder="Link ou endereço">
+              </label>
+            </div>
+
+            <div class="input-wrap-2">
+              <label class="wrap2" for="starttime">Início
+                <textarea placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </label>
+            </div>
+          </div><!--/input-wrap-->
+
+          <div class="input-wrap">
+            <legend>
+              <img src="assets/image/icons/paintbrush-vertical.png" alt="">
+              <strong>Sobre o evento</strong>
+            </legend>
+
+            <span>Cor principal</span>
+            <div class="colors-radio">
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle brand-light"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle navy"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle purple"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle fuschia"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle pink"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle danger"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle orange"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle yellow"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle lime"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle green"></div>
+              </label>
+              <label>
+                <input type="radio" id="op1" name="option">
+                <div class="circle cyan"></div>
+              </label>
+              
+            </div>
+            
+          </div><!--/input-wrap-->
+
         </fieldset>
 
       </form>

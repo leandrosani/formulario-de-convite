@@ -9,22 +9,20 @@
   --font-family-baloo: "Baloo 2", sans-serif;
   --font-family-sans: "Open Sans", sans-serif;
 
-  --brand-light: #59B2FF;
+  
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
 
+  --brand-light: #59B2FF;
   --purple: #B259FF;
   --fuschia: #FF59F9;
   --pink: #FF598B;
   --orange: #FF8B59;
   --yellow: #FFCD59;
-
-
   --lime: #E1FF59;
   --green: #59FF91;
   --cyan: #59FFF9;
   --navy: #6A59FF;
-
   --danger: #FF5959;
 
   --input-base: #1C1F21;
@@ -40,14 +38,79 @@
   --text-heading: #F9F9F9;
 }
 
+.brand-light {
+  background-color: #59B2FF;
+}
+.purple {
+  background-color: #B259FF;
+}
+.fuschia {
+  background-color: #FF59F9;
+}
+.pink {
+  background-color: #FF598B;
+}
+.orange {
+  background-color: #FF8B59;
+}
+.yellow {
+  background-color: #FFCD59;
+}
+.lime {
+  background-color: #E1FF59;
+}
+.green {
+  background-color: #59FF91;
+}
+.cyan {
+  background-color: #59FFF9;
+}
+.navy {
+  background-color: #6A59FF;
+}
+.danger {
+  background-color: #FF5959;
+}
+
 body {
   overflow: hidden;
   background-color: var(--shape-background);
+  display: flex;
+  justify-content: center;
 }
 
 #app {
   display: flex;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
   height: 100vh;
+  width: 1280px;
 }
+
+input, textarea {
+  border-radius: 8px;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  padding: 12px 16px;
+  color: var(--text-body);
+  font-size: 16px;
+
+  &:focus {
+    border: 1px solid var(--brand-light);
+    outline: none;
+  }
+}
+
+textarea {
+  height: 8.5rem;
+  width: 35rem;
+  overflow: hidden;
+  resize: none;
+}
+
+.input-wrap-2 input {
+  width: 17rem;
+}
+
+

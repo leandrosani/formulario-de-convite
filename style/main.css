@@ -1,8 +1,7 @@
 main {
-  padding: 130px;
+  padding: 80px 130px 130px;
   background-color: var(--shape-body);
   margin: auto;
-  width: 100%;
   height: 100vh;
   border-radius: 12px;
   overflow: auto;
@@ -12,7 +11,6 @@ main {
 
 h2 {
   font: 600 1.75rem var(--font-family-sans);
-  margin-bottom: 40px;
 }
 
 fieldset {
@@ -31,4 +29,125 @@ fieldset {
       color: var(--input-placeholder);
     }
   }
+}
+
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 35rem;
+  margin-top: 40px;
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input-wrap-2 {
+    display: flex;
+    justify-content: space-between;
+
+    .wrap2 {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
+
+.radio-wrap {
+  display: flex;
+  flex-direction: column;
+
+  .video {
+    background-image: url(../assets/image/icons/video.png);
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+  }
+
+  .build {
+    background-image: url(../assets/image/icons/building-2.png);
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+  }
+
+  & .radio {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    color: var(--text-body);
+    margin-top: 12px;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+    }
+
+    & .custom {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      font-size: 14px;
+      margin: 2px;
+      width: 132px;
+      height: 35px;
+      border-radius: 4px;
+      padding-left: 16px ;
+
+      &:hover {
+        cursor: pointer;
+        .video {
+          background-image: url("../assets/image/icons/video-blue.svg");
+        }
+        .build {
+          background-image: url("../assets/image/icons/building-blue.png");
+        }
+      }
+    }
+  }
+}
+
+.radio input[type="radio"]:checked + .custom {
+  color: var(--text-heading);
+  background: var(--input-stroke);
+
+  .video {
+    background-image: url("../assets/image/icons/video-blue.svg");
+  }
+
+  .build {
+    background-image: url("../assets/image/icons/building-blue.png");
+  }
+}
+
+.colors-radio {
+  display: flex;
+  justify-content: space-between;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 5px solid var(--input-stroke);
+
+    &:hover {
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.colors-radio input[type="radio"]:checked + .circle{
+  border: none;
+  outline: none;
 }
