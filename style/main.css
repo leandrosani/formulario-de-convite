@@ -84,7 +84,6 @@ fieldset {
 
     & input {
       position: absolute;
-      opacity: 0;
     }
 
     & .custom {
@@ -127,11 +126,7 @@ fieldset {
 
 .colors-radio {
   display: flex;
-  justify-content: space-between;
-
-  input[type="radio"] {
-    display: none;
-  }
+  justify-content: space-between; 
 
   .circle {
     width: 40px;
@@ -149,5 +144,36 @@ fieldset {
 
 .colors-radio input[type="radio"]:checked + .circle{
   border: none;
+  outline: none;
+}
+
+.themes-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+
+  .themes {
+    display: flex;
+    flex-direction: column;
+    width: 134px;
+    height: 103px;
+    align-items: center;
+    background-color: var(--input-stroke);
+    border-radius: 8px;
+    padding-top: 4px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & p {
+      margin-block: auto;
+      font-size: 14px;
+    }
+  }
+}
+
+.themes-wrap input[type="radio"]:checked + .themes{
+  border: 1px solid var(--brand-light);
   outline: none;
 }
