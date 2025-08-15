@@ -72,8 +72,8 @@
             </div>
 
             <div class="input-wrap-2">
-              <label class="wrap2" for="starttime">Início
-                <textarea placeholder="Escreva sobre os detalhes do evento"></textarea>
+              <label class="wrap2" for="description">Descrição
+                <textarea placeholder="Escreva sobre os detalhes do evento" id="description"></textarea>
               </label>
             </div>
           </div><!--/input-wrap-->
@@ -219,11 +219,16 @@
                   <p>Outro</p>
                 </div>
               </label>
-              
-              
             </div><!--themes-wrap-->
 
-
+            <div class="input-wrap-2">
+              <label class="wrap2" for="starttime">Estilo
+                <input type="datetime-local" id="starttime" name="starttime" placeholder="DD/MM/AAAA, --:--">
+              </label>
+              <label class="wrap2" for="endtime">Foto de capa
+                <input type="datetime-local" id="endtime" name="endtime" placeholder="DD/MM/AAAA, --:--">
+              </label>
+            </div>
             
           </div><!--/input-wrap-->
 
