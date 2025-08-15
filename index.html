@@ -26,7 +26,6 @@
     
         <h2>Crie seu convite</h2>
         <fieldset>
-
           <div class="input-wrap">
             <legend>
               <img src="assets/image/icons/calendar.png" alt="">
@@ -36,7 +35,7 @@
               <input type="text" id="eventname" name="eventname" placeholder="Nome do evento">
             </label>
 
-            <div class="input-wrap-2">
+            <div class="input-wrap-between">
               <label class="wrap2" for="starttime">Início
                 <input type="datetime-local" id="starttime" name="starttime" placeholder="DD/MM/AAAA, --:--">
               </label>
@@ -45,22 +44,22 @@
               </label>
             </div>
 
-            <div class="input-wrap-2">
+            <div class="input-wrap-between">
               <div class="radio-wrap">
-              <span>Tipo</span>
+              <p>Tipo</p>
                 <div class="radio">
                   <label>
                     <input type="radio" name="type" id="presencial">
                     <div class="custom">
                       <div class="build"></div>
-                      <span>Presencial</span>
+                      <p>Presencial</p>
                     </div>
                   </label>
                   <label>
                     <input type="radio" name="type" id="online">
                     <div class="custom">
                       <div class="video"></div>
-                      <span>Online</span>
+                      <p>Online</p>
                     </div>
                   </label>
                 </div>
@@ -71,7 +70,7 @@
               </label>
             </div>
 
-            <div class="input-wrap-2">
+            <div class="input-wrap-between">
               <label class="wrap2" for="description">Descrição
                 <textarea placeholder="Escreva sobre os detalhes do evento" id="description"></textarea>
               </label>
@@ -84,7 +83,7 @@
               <strong>Personalização</strong>
             </legend>
 
-            <span>Cor principal</span>
+            <p>Cor principal</p>
             <div class="colors-radio">
               <label>
                 <input type="radio" id="op1" name="option">
@@ -133,7 +132,7 @@
               
             </div><!--colors-radio-->
 
-            <span>Tema do evento</span>
+            <p>Tema do evento</p>
             <div class="themes-wrap">
               <label>
                 <input type="radio" id="op1" name="event">
@@ -221,19 +220,83 @@
               </label>
             </div><!--themes-wrap-->
 
-            <div class="input-wrap-2">
-              <label class="wrap2" for="starttime">Estilo
-                <input type="datetime-local" id="starttime" name="starttime" placeholder="DD/MM/AAAA, --:--">
-              </label>
-              <label class="wrap2" for="endtime">Foto de capa
-                <input type="datetime-local" id="endtime" name="endtime" placeholder="DD/MM/AAAA, --:--">
-              </label>
+            <div class="input-wrap-flex">
+              <div class="flex-20">
+                <p>Estilo</p>
+                <label for="check">
+                  <input type="checkbox" id="check" name="black-white">
+                  <div class="switch"></div>
+                  <div class="texto"></div>
+                </label>
+              </div>
+
+              <div class="flex-80">
+                <p>Foto de capa</p>
+                <label for="upload">
+                  <input type="file" id="upload" name="up">
+                  <div class="select">
+                    <img src="assets/image/icons/upload.png" alt="">
+                    <span>Selecionar</span>
+                  </div>
+                  <span>Nenhum arquivo Selecionado</span>
+                </label>
+              </div>
             </div>
-            
           </div><!--/input-wrap-->
 
+          <div class="input-wrap">
+            <legend>
+              <img src="assets/image/icons/calendar.png" alt="">
+              <strong>Dados para contato</strong>
+            </legend>
+            <label class="wrap" for="name">Nome
+              <input type="text" id="name" name="name" placeholder="Nome completo">
+            </label>
+
+            <div class="input-wrap-between">
+              <label class="wrap2" for="mail">E-mail
+                <input type="email" id="mail" name="mail" placeholder="exemplo@email.com">
+              </label>
+              <label class="wrap2" for="phone">Telefone
+                <input type="text" id="phone" name="phone" placeholder="(99) 99999-9999">
+              </label>
+            </div>
+
+            <div class="input-wrap-between">
+              <label class="wrap2" for="phone-2">Telefone
+                <input type="text" id="phone-2" name="phone-2" placeholder="(99) 99999-9999">
+              </label>
+            </div>
+            <div class="border-footer"></div>
+
+            <div class="input-footer">
+              <label for="">
+                <input type="checkbox">
+                <p>
+                  Li e concordo com os 
+                  <span>Termos e Condições</span> 
+                  e com a 
+                  <span>Política de Privacidade</span>
+                  </p>
+              </label>
+              <label for="">
+                <input type="checkbox">
+                <p>Aceito receber atualizações e promoções por e-mail</p>
+              </label>
+              <label for="">
+                <input type="checkbox">
+                <p>Aceito receber atualizações e promoções por SMS</p>
+              </label>
+            </div>          
         </fieldset>
 
+        <div class="btn">
+          <button>
+            <img src="assets/image/icons/ticket.png" alt="">
+            <p>Gerar convite</p>
+          </button>
+        </div>
+        
       </form>
 
     </main>

@@ -79,6 +79,19 @@ body {
   justify-content: center;
 }
 
+p {
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+}
+
+textarea::placeholder,
+input::placeholder{
+  font-family: var(--font-family-sans);
+}
+
 #app {
   display: flex;
   justify-content: center;
@@ -109,10 +122,50 @@ textarea {
   resize: none;
 }
 
-.input-wrap-2 input {
+.input-wrap-between input {
   width: 17rem;
 }
 
 input[type="radio"] {
   display: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.border-footer {
+  border: 1px solid var(--input-stroke);
+  margin-block: 48px;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--brand-dark);
+    border-radius: 8px;
+    width: 177px;
+    height: 48px;
+    margin-top: 48px;
+    
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        color: var(--text-heading);
+    }
+  }
+  
 }
